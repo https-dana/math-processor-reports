@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="uk"><head><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta charset="utf-8">
+<title>Звіти П3 «Математичний процесор»</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=PT+Sans:wght@400;700&display=swap">
+<style>
+/* Сторінка-обкладинка курсового проєкту: титул як у звіті, нижче – вісім інкрементів по порядку */
+:root{--bg:#f3f4f2;--paper:#ffffff;--ink:#16191d;--muted:#5b6168;--line:#d5d8d4;--accent:#0b4f9c;--accent-soft:#e6eef8;
+ --serif:"PT Serif","Times New Roman",Georgia,serif;--sans:"PT Sans","Segoe UI",Arial,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15181b;--paper:#1d2125;--ink:#e8eaec;--muted:#a3a9b0;--line:#343a40;--accent:#8db8ef;--accent-soft:#22303f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15181b;--paper:#1d2125;--ink:#e8eaec;--muted:#a3a9b0;--line:#343a40;--accent:#8db8ef;--accent-soft:#22303f;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-block:40px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+header{background:var(--paper);border:1px solid var(--line);padding:32px 28px;text-align:center;display:grid;gap:10px}
+.org{font:700 13px/1.6 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(26px,5vw,36px)/1.2 var(--serif);margin:6px 0 0;text-wrap:balance}
+.sub{font:400 17px/1.5 var(--serif);color:var(--muted);margin:0}
+.who{font-size:15px;color:var(--muted)}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.card a{display:grid;grid-template-columns:64px 1fr;grid-template-rows:auto auto;column-gap:16px;align-items:baseline;
+ background:var(--paper);border:1px solid var(--line);padding:16px 20px;color:inherit;text-decoration:none}
+.card a:hover,.card a:focus-visible{border-color:var(--accent);outline:none;background:var(--accent-soft)}
+.inc{grid-row:1 / span 2;font:700 26px/1 var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.name{font:700 18px/1.35 var(--serif);min-width:0}
+.meta{font-size:14px;color:var(--muted);min-width:0}
+footer{font-size:14px;color:var(--muted);text-align:center}
+@media (max-width:480px){.card a{grid-template-columns:44px 1fr;padding:14px}.inc{font-size:22px}header{padding:24px 16px}}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <div class="org">Київський національний університет імені Тараса Шевченка · Інженерія програмного забезпечення</div>
+  <h1>STEM-проєкт П3 «Математичний процесор»</h1>
+  <p class="sub">Звіти про виконання інкрементів I1–I8 з дисципліни «Функціональне програмування мовою Scheme»</p>
+  <div class="who">Колесник Богдана, Рижкова Марія · група ІПЗ-41 · Київ – 2026</div>
+</header>
+<ol><li class="card"><a href="i1.html">
+  <span class="inc">I1</span>
+  <span class="name">Базові математичні процедури</span>
+  <span class="meta">Тема 2 · define, if, cond, предикати</span>
+</a></li><li class="card"><a href="i2.html">
+  <span class="inc">I2</span>
+  <span class="name">Рекурсивні процедури</span>
+  <span class="meta">Тема 3 · рекурсія, рекурентні співвідношення</span>
+</a></li><li class="card"><a href="i3.html">
+  <span class="inc">I3</span>
+  <span class="name">Ітераційні процеси</span>
+  <span class="meta">Тема 3 · ітераційні процеси, хвостові виклики</span>
+</a></li><li class="card"><a href="i4.html">
+  <span class="inc">I4</span>
+  <span class="name">Наближені обчислення</span>
+  <span class="meta">Тема 3 · рекурентні процедури, lambda</span>
+</a></li><li class="card"><a href="i5.html">
+  <span class="inc">I5</span>
+  <span class="name">Узагальнення обчислень</span>
+  <span class="meta">Тема 4 · процедури вищого порядку, накопичення</span>
+</a></li><li class="card"><a href="i6.html">
+  <span class="inc">I6</span>
+  <span class="name">Раціональні числа</span>
+  <span class="meta">Тема 6 · cons, car, cdr, конструктори і селектори</span>
+</a></li><li class="card"><a href="i7.html">
+  <span class="inc">I7</span>
+  <span class="name">Комплексні числа</span>
+  <span class="meta">Тема 7 · позначені дані, диспетчеризація за типом</span>
+</a></li><li class="card"><a href="i8.html">
+  <span class="inc">I8</span>
+  <span class="name">Закінчений універсальний математичний процесор</span>
+  <span class="meta">Теми 7, 9, 10 · структуровані дані, таблиці, файли</span>
+</a></li></ol>
+<footer>Мова реалізації – Racket. Кожен інкремент зберігає функціональність попередніх; I8 – завершена версія процесора.</footer>
+</div></body></html>
